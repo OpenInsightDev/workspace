@@ -1,0 +1,15 @@
+[submodule ".repos/effect"]
+	path = .repos/effect
+	url = https://github.com/Effect-TS/effect.git
+[submodule "open-insight"]
+	path = open-insight
+	url = https://github.com/OpenInsightDev/open-insight.git
+[submodule "benchmarks/workbuddy-bench"]
+	path = benchmarks/workbuddy-bench
+	url = https://github.com/OpenInsightDev/workbuddy-bench.git
+[submodule "benchmarks/verilog-eval"]
+	path = benchmarks/verilog-eval
+	url = https://github.com/OpenInsightDev/verilog-eval.git
+[submodule "benchmarks/cvdp_benchmark"]
+	path = benchmarks/cvdp_benchmark
+	url = https://github.com/OpenInsightDev/cvdp_benchmark.git
