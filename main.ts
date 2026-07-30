@@ -1,5 +1,6 @@
 import { makeBench } from "verilog-eval";
+import { Effect } from "effect";
 
-const main = async () => {
-  const bench = makeBench();
-};
+const main = Effect.fn(function* () {
+  const bench = yield* makeBench();
+});

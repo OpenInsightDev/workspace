@@ -13,3 +13,6 @@
 [submodule "benchmarks/cvdp_benchmark"]
 	path = benchmarks/cvdp_benchmark
 	url = https://github.com/OpenInsightDev/cvdp_benchmark.git
+[submodule "benchmarks/frontier-bench"]
+	path = benchmarks/frontier-bench
+	url = https://github.com/observerw/frontier-bench.git

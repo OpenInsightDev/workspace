@@ -1,0 +1,16 @@
+{
+  "lsp": {
+    "deno": {
+      "initialization_options": {
+        "enable": true,
+      },
+    },
+  },
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["deno", "!typescript-language-server", "!vtsls"],
+
+      "formatter": "language_server",
+    },
+  },
+}

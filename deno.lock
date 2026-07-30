@@ -533,11 +533,6 @@
       "npm:effect@^4.0.0-beta.101"
     ],
     "members": {
-      "benchmarks/cvdp_benchmark": {
-        "dependencies": [
-          "jsr:@std/assert@1"
-        ]
-      },
       "benchmarks/verilog-eval": {
         "dependencies": [
           "jsr:@std/assert@1"
