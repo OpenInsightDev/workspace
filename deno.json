@@ -1,11 +1,12 @@
 {
   "name": "@open-insight/workspace",
   "workspace": [
-    "open-insight/packages/*",
     "benchmarks/*",
     "harnesses/*"
   ],
   "imports": {
+    "@open-insight/core": "npm:@open-insight/core@^0.0.24",
+    "@open-insight/eval": "npm:@open-insight/eval@^0.0.24",
     "@std/assert": "jsr:@std/assert@^1.0.19",
     "@std/fs": "jsr:@std/fs@^1.0.24",
     "@std/path": "jsr:@std/path@^1.1.6",
