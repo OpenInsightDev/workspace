@@ -9,9 +9,9 @@
     "jsr:@std/path@^1.1.5": "1.1.6",
     "jsr:@std/path@^1.1.6": "1.1.6",
     "npm:@effect/platform-node@^4.0.0-beta.101": "4.0.0-beta.102_effect@4.0.0-beta.102_ioredis@5.11.1",
-    "npm:@open-insight/agent@^0.0.25": "0.0.25_effect@4.0.0-beta.102_@opentelemetry+semantic-conventions@1.43.0_zod@4.4.3",
-    "npm:@open-insight/core@^0.0.25": "0.0.25_@effect+platform-node@4.0.0-beta.102__effect@4.0.0-beta.102__ioredis@5.11.1_effect@4.0.0-beta.102_@opentelemetry+semantic-conventions@1.43.0_zod@4.4.3",
-    "npm:@open-insight/eval@^0.0.25": "0.0.25_effect@4.0.0-beta.102",
+    "npm:@open-insight/agent@^1.0.4": "1.0.4_effect@4.0.0-beta.102_@opentelemetry+api@1.9.1_@opentelemetry+semantic-conventions@1.43.0_zod@4.4.3",
+    "npm:@open-insight/core@^1.0.4": "1.0.4_@effect+platform-node@4.0.0-beta.102__effect@4.0.0-beta.102__ioredis@5.11.1_effect@4.0.0-beta.102_@opentelemetry+api@1.9.1_@opentelemetry+api-logs@0.221.0_@opentelemetry+sdk-logs@0.221.0__@opentelemetry+api@1.9.1_@opentelemetry+sdk-metrics@2.10.0__@opentelemetry+api@1.9.1_@opentelemetry+sdk-trace-node@2.10.0__@opentelemetry+api@1.9.1_@opentelemetry+sdk-trace-web@2.10.0__@opentelemetry+api@1.9.1_@opentelemetry+semantic-conventions@1.43.0_zod@4.4.3",
+    "npm:@open-insight/eval@^1.0.4": "1.0.4_effect@4.0.0-beta.102_@opentelemetry+api@1.9.1_@opentelemetry+semantic-conventions@1.43.0_vite@8.2.0_vitest@4.1.10__@opentelemetry+api@1.9.1__vite@8.2.0_zod@4.4.3",
     "npm:effect@^4.0.0-beta.101": "4.0.0-beta.102"
   },
   "jsr": {
@@ -96,7 +96,7 @@
       ],
       "tarball": "http://localhost:4873/@effect/ai-openai/-/ai-openai-4.0.0-beta.102.tgz"
     },
-    "@effect/opentelemetry@4.0.0-beta.102_@opentelemetry+semantic-conventions@1.43.0_effect@4.0.0-beta.102": {
+    "@effect/opentelemetry@4.0.0-beta.102_@opentelemetry+api@1.9.1_@opentelemetry+api-logs@0.221.0_@opentelemetry+sdk-logs@0.221.0__@opentelemetry+api@1.9.1_@opentelemetry+sdk-metrics@2.10.0__@opentelemetry+api@1.9.1_@opentelemetry+sdk-trace-node@2.10.0__@opentelemetry+api@1.9.1_@opentelemetry+sdk-trace-web@2.10.0__@opentelemetry+api@1.9.1_@opentelemetry+semantic-conventions@1.43.0_effect@4.0.0-beta.102": {
       "integrity": "sha512-U15cxJ1uf3+HMnZB0BUQe3U4TuyIPYxSHJ+wEzkF4ZjteN224hsgeTgsyXSFjSIpWDVWfujdGPqmtkDpcMzf6w==",
       "dependencies": [
         "@opentelemetry/api",
@@ -138,7 +138,7 @@
       ],
       "tarball": "http://localhost:4873/@effect/platform-node/-/platform-node-4.0.0-beta.102.tgz"
     },
-    "@effect/vitest@4.0.0-beta.102_effect@4.0.0-beta.102": {
+    "@effect/vitest@4.0.0-beta.102_effect@4.0.0-beta.102_vitest@4.1.10__@opentelemetry+api@1.9.1__vite@8.2.0_@opentelemetry+api@1.9.1_vite@8.2.0": {
       "integrity": "sha512-4dipFAYG6imOzrY3zy3BgzCJkbb9xESyzUef0WSx8bsK0/SpITqbJpdwKeOyDWLZ+rimjua8IbTFMAde865pIQ==",
       "dependencies": [
         "effect",
@@ -189,6 +189,194 @@
     "@jridgewell/sourcemap-codec@1.5.5": {
       "integrity": "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==",
       "tarball": "http://localhost:4873/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz"
+    },
+    "@jsonjoy.com/base64@1.1.2_tslib@2.8.1": {
+      "integrity": "sha512-q6XAnWQDIMA3+FTiOYajoYqySkO+JSat0ytXGSuRdq9uXE7o92gzuQwQM14xaCRlBLGq3v5miDGC4vkVTn54xA==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/base64/-/base64-1.1.2.tgz"
+    },
+    "@jsonjoy.com/base64@17.67.0_tslib@2.8.1": {
+      "integrity": "sha512-5SEsJGsm15aP8TQGkDfJvz9axgPwAEm98S5DxOuYe8e1EbfajcDmgeXXzccEjh+mLnjqEKrkBdjHWS5vFNwDdw==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/base64/-/base64-17.67.0.tgz"
+    },
+    "@jsonjoy.com/buffers@1.2.1_tslib@2.8.1": {
+      "integrity": "sha512-12cdlDwX4RUM3QxmUbVJWqZ/mrK6dFQH4Zxq6+r1YXKXYBNgZXndx2qbCJwh3+WWkCSn67IjnlG3XYTvmvYtgA==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/buffers/-/buffers-1.2.1.tgz"
+    },
+    "@jsonjoy.com/buffers@17.67.0_tslib@2.8.1": {
+      "integrity": "sha512-tfExRpYxBvi32vPs9ZHaTjSP4fHAfzSmcahOfNxtvGHcyJel+aibkPlGeBB+7AoC6hL7lXIE++8okecBxx7lcw==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/buffers/-/buffers-17.67.0.tgz"
+    },
+    "@jsonjoy.com/codegen@1.0.0_tslib@2.8.1": {
+      "integrity": "sha512-E8Oy+08cmCf0EK/NMxpaJZmOxPqM+6iSe2S4nlSBrPZOORoDJILxtbSUEDKQyTamm/BVAhIGllOBNU79/dwf0g==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/codegen/-/codegen-1.0.0.tgz"
+    },
+    "@jsonjoy.com/codegen@17.67.0_tslib@2.8.1": {
+      "integrity": "sha512-idnkUplROpdBOV0HMcwhsCUS5TRUi9poagdGs70A6S4ux9+/aPuKbh8+UYRTLYQHtXvAdNfQWXDqZEx5k4Dj2Q==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/codegen/-/codegen-17.67.0.tgz"
+    },
+    "@jsonjoy.com/fs-core@4.67.0_tslib@2.8.1": {
+      "integrity": "sha512-+QOYAGujzm86pKcX4N0JQ1YcLEjypr/I+wmQRxwI8W7K0QXKSi8vQVC2oKQGjcfbHq02JvCQijypfvyhcTz7uw==",
+      "dependencies": [
+        "@jsonjoy.com/fs-node-builtins",
+        "@jsonjoy.com/fs-node-utils",
+        "thingies",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/fs-core/-/fs-core-4.67.0.tgz"
+    },
+    "@jsonjoy.com/fs-fsa@4.67.0_tslib@2.8.1": {
+      "integrity": "sha512-2jCnH5ofKXb+6vcl8dQArO1Gb4FT7vLbMGVnNim0ekXkY78DPVXZvJ8DQp9WLbqP/G/gxiPVz/DOMoOCD4BqqQ==",
+      "dependencies": [
+        "@jsonjoy.com/fs-core",
+        "@jsonjoy.com/fs-node-builtins",
+        "@jsonjoy.com/fs-node-utils",
+        "thingies",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/fs-fsa/-/fs-fsa-4.67.0.tgz"
+    },
+    "@jsonjoy.com/fs-node-builtins@4.67.0_tslib@2.8.1": {
+      "integrity": "sha512-os7Cft1EudH0xZs5Kh5/qHI72jk8DMQ1561elyHkHd9c9xaa4wOfK1iMh4JB9y+kXtpXjEnT4cjHqqc7A3X3lA==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/fs-node-builtins/-/fs-node-builtins-4.67.0.tgz"
+    },
+    "@jsonjoy.com/fs-node-to-fsa@4.67.0_tslib@2.8.1": {
+      "integrity": "sha512-5e6WTnLhw0Q5mPEACOsA7h2BA++N1FCSmhXRX5gone8Le4fsqcpgpukqW5hWneLfzIr5AOEliu0PyokdYx3Bwg==",
+      "dependencies": [
+        "@jsonjoy.com/fs-fsa",
+        "@jsonjoy.com/fs-node-builtins",
+        "@jsonjoy.com/fs-node-utils",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/fs-node-to-fsa/-/fs-node-to-fsa-4.67.0.tgz"
+    },
+    "@jsonjoy.com/fs-node-utils@4.67.0_tslib@2.8.1": {
+      "integrity": "sha512-ZcCPh4jvUqYxAgu4lLe+6eQbijxEkZIrCq0Jhh669o3v3zrCn8N4YAFod3zllZtSHhwb+YbER29LUW/SdNrP7Q==",
+      "dependencies": [
+        "@jsonjoy.com/fs-node-builtins",
+        "glob-to-regex.js",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/fs-node-utils/-/fs-node-utils-4.67.0.tgz"
+    },
+    "@jsonjoy.com/fs-node@4.67.0_tslib@2.8.1": {
+      "integrity": "sha512-EZ/mSrxRYphDbyll1VuDW0mvj/USoe2M5sxT2nYqyYyvdxsIsijhJOiygBHAaj86Eqd/Kb9ukkwXjBisRTk1tg==",
+      "dependencies": [
+        "@jsonjoy.com/fs-core",
+        "@jsonjoy.com/fs-node-builtins",
+        "@jsonjoy.com/fs-node-utils",
+        "@jsonjoy.com/fs-print",
+        "@jsonjoy.com/fs-snapshot",
+        "glob-to-regex.js",
+        "thingies",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/fs-node/-/fs-node-4.67.0.tgz"
+    },
+    "@jsonjoy.com/fs-print@4.67.0_tslib@2.8.1": {
+      "integrity": "sha512-xBhay3ayVlFeScafZy+7jyH0+I6MLomaL+2nn/KWirgjwh58w8+u44j7oSvE8EQ2NLF63B1eVc65awmbs/39Iw==",
+      "dependencies": [
+        "@jsonjoy.com/fs-node-utils",
+        "tree-dump",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/fs-print/-/fs-print-4.67.0.tgz"
+    },
+    "@jsonjoy.com/fs-snapshot@4.67.0_tslib@2.8.1": {
+      "integrity": "sha512-wn5c6Qx0iVX1dV74l5WOCIPH9lz3xU6A0QG45n0c53athmmr7Z+XTg0YOndME88g/5LjcqwiSSYD9aSr9+goYg==",
+      "dependencies": [
+        "@jsonjoy.com/buffers@17.67.0_tslib@2.8.1",
+        "@jsonjoy.com/fs-node-utils",
+        "@jsonjoy.com/json-pack@17.67.0_tslib@2.8.1",
+        "@jsonjoy.com/util@17.67.0_tslib@2.8.1",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/fs-snapshot/-/fs-snapshot-4.67.0.tgz"
+    },
+    "@jsonjoy.com/json-pack@1.21.0_tslib@2.8.1": {
+      "integrity": "sha512-+AKG+R2cfZMShzrF2uQw34v3zbeDYUqnQ+jg7ORic3BGtfw9p/+N6RJbq/kkV8JmYZaINknaEQ2m0/f693ZPpg==",
+      "dependencies": [
+        "@jsonjoy.com/base64@1.1.2_tslib@2.8.1",
+        "@jsonjoy.com/buffers@1.2.1_tslib@2.8.1",
+        "@jsonjoy.com/codegen@1.0.0_tslib@2.8.1",
+        "@jsonjoy.com/json-pointer@1.0.2_tslib@2.8.1",
+        "@jsonjoy.com/util@1.9.0_tslib@2.8.1",
+        "hyperdyperid",
+        "thingies",
+        "tree-dump",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/json-pack/-/json-pack-1.21.0.tgz"
+    },
+    "@jsonjoy.com/json-pack@17.67.0_tslib@2.8.1": {
+      "integrity": "sha512-t0ejURcGaZsn1ClbJ/3kFqSOjlryd92eQY465IYrezsXmPcfHPE/av4twRSxf6WE+TkZgLY+71vCZbiIiFKA/w==",
+      "dependencies": [
+        "@jsonjoy.com/base64@17.67.0_tslib@2.8.1",
+        "@jsonjoy.com/buffers@17.67.0_tslib@2.8.1",
+        "@jsonjoy.com/codegen@17.67.0_tslib@2.8.1",
+        "@jsonjoy.com/json-pointer@17.67.0_tslib@2.8.1",
+        "@jsonjoy.com/util@17.67.0_tslib@2.8.1",
+        "hyperdyperid",
+        "thingies",
+        "tree-dump",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/json-pack/-/json-pack-17.67.0.tgz"
+    },
+    "@jsonjoy.com/json-pointer@1.0.2_tslib@2.8.1": {
+      "integrity": "sha512-Fsn6wM2zlDzY1U+v4Nc8bo3bVqgfNTGcn6dMgs6FjrEnt4ZCe60o6ByKRjOGlI2gow0aE/Q41QOigdTqkyK5fg==",
+      "dependencies": [
+        "@jsonjoy.com/codegen@1.0.0_tslib@2.8.1",
+        "@jsonjoy.com/util@1.9.0_tslib@2.8.1",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/json-pointer/-/json-pointer-1.0.2.tgz"
+    },
+    "@jsonjoy.com/json-pointer@17.67.0_tslib@2.8.1": {
+      "integrity": "sha512-+iqOFInH+QZGmSuaybBUNdh7yvNrXvqR+h3wjXm0N/3JK1EyyFAeGJvqnmQL61d1ARLlk/wJdFKSL+LHJ1eaUA==",
+      "dependencies": [
+        "@jsonjoy.com/util@17.67.0_tslib@2.8.1",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/json-pointer/-/json-pointer-17.67.0.tgz"
+    },
+    "@jsonjoy.com/util@1.9.0_tslib@2.8.1": {
+      "integrity": "sha512-pLuQo+VPRnN8hfPqUTLTHk126wuYdXVxE6aDmjSeV4NCAgyxWbiOIeNJVtID3h1Vzpoi9m4jXezf73I6LgabgQ==",
+      "dependencies": [
+        "@jsonjoy.com/buffers@1.2.1_tslib@2.8.1",
+        "@jsonjoy.com/codegen@1.0.0_tslib@2.8.1",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/util/-/util-1.9.0.tgz"
+    },
+    "@jsonjoy.com/util@17.67.0_tslib@2.8.1": {
+      "integrity": "sha512-6+8xBaz1rLSohlGh68D1pdw3AwDi9xydm8QNlAFkvnavCJYSze+pxoW2VKP8p308jtlMRLs5NTHfPlZLd4w7ew==",
+      "dependencies": [
+        "@jsonjoy.com/buffers@17.67.0_tslib@2.8.1",
+        "@jsonjoy.com/codegen@17.67.0_tslib@2.8.1",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/@jsonjoy.com/util/-/util-17.67.0.tgz"
     },
     "@modelcontextprotocol/sdk@1.30.0_zod@4.4.3": {
       "integrity": "sha512-xKd8OIzlqNzcqcNumGAa6g+PW2kjD5vrpcKOnfldAUPP3j7lnqMPwlTXQm8gF+UwH72z0lqaRbjr9hqGz0eITA==",
@@ -258,8 +446,8 @@
       ],
       "tarball": "http://localhost:4873/@napi-rs/wasm-runtime/-/wasm-runtime-1.2.2.tgz"
     },
-    "@open-insight/agent@0.0.25_effect@4.0.0-beta.102_@opentelemetry+semantic-conventions@1.43.0_zod@4.4.3": {
-      "integrity": "sha512-KB6jreqyCki0gZAT3m44YRXBZH3sL/a8DkJiMj2qn2ZE8tkZTju2AKSwRaaHGJPb55nVgKfZcmzuwthcekfoIg==",
+    "@open-insight/agent@1.0.4_effect@4.0.0-beta.102_@opentelemetry+api@1.9.1_@opentelemetry+semantic-conventions@1.43.0_zod@4.4.3": {
+      "integrity": "sha512-NVIbU41vsvWAtiKORz42zu8yGMZ1WbXOM94tn3/I9pZfUurMJlnKbwubXgnwFHWev6KROOpI+swVjf0Y6CuZQA==",
       "dependencies": [
         "@effect/ai-anthropic",
         "@effect/ai-openai",
@@ -268,12 +456,13 @@
         "@modelcontextprotocol/sdk",
         "@open-insight/core",
         "effect",
+        "memfs",
         "yaml"
       ],
-      "tarball": "http://localhost:4873/@open-insight/agent/-/agent-0.0.25.tgz"
+      "tarball": "http://localhost:4873/@open-insight/agent/-/agent-1.0.4.tgz"
     },
-    "@open-insight/core@0.0.25_@effect+platform-node@4.0.0-beta.102__effect@4.0.0-beta.102__ioredis@5.11.1_effect@4.0.0-beta.102_@opentelemetry+semantic-conventions@1.43.0_zod@4.4.3": {
-      "integrity": "sha512-JhUzMiQqIBhkH0UdOJDeJJeI93Iqq8LUZWlhoexlT3dCUkqa+x6wyLTjOo14l2WrIvPrCsOwuVfgErLOsWHQdw==",
+    "@open-insight/core@1.0.4_@effect+platform-node@4.0.0-beta.102__effect@4.0.0-beta.102__ioredis@5.11.1_effect@4.0.0-beta.102_@opentelemetry+api@1.9.1_@opentelemetry+api-logs@0.221.0_@opentelemetry+sdk-logs@0.221.0__@opentelemetry+api@1.9.1_@opentelemetry+sdk-metrics@2.10.0__@opentelemetry+api@1.9.1_@opentelemetry+sdk-trace-node@2.10.0__@opentelemetry+api@1.9.1_@opentelemetry+sdk-trace-web@2.10.0__@opentelemetry+api@1.9.1_@opentelemetry+semantic-conventions@1.43.0_zod@4.4.3": {
+      "integrity": "sha512-e7jQEEJUN22eWrtZ0tl2DOsmL/4dr3fWWuZg1ZceQfuQRO0p4XF+fWsrntpfj6HmErle9pnaYyQx54kjLpSrpw==",
       "dependencies": [
         "@agentclientprotocol/sdk",
         "@effect/ai-anthropic",
@@ -282,16 +471,17 @@
         "@effect/platform-node",
         "ai",
         "effect",
+        "eta",
         "ipaddr.js@2.4.0",
         "openai",
         "picomatch",
         "semver",
         "validator"
       ],
-      "tarball": "http://localhost:4873/@open-insight/core/-/core-0.0.25.tgz"
+      "tarball": "http://localhost:4873/@open-insight/core/-/core-1.0.4.tgz"
     },
-    "@open-insight/eval@0.0.25_effect@4.0.0-beta.102": {
-      "integrity": "sha512-9XkvpxeKnzMcLgpg/OmxsIx3j3Zbkulwg2JHm1QsA2O7M17GRzb9m5KbPR7ebP7JchxpqL/QxfjwPrPPArST2w==",
+    "@open-insight/eval@1.0.4_effect@4.0.0-beta.102_@opentelemetry+api@1.9.1_@opentelemetry+semantic-conventions@1.43.0_vite@8.2.0_vitest@4.1.10__@opentelemetry+api@1.9.1__vite@8.2.0_zod@4.4.3": {
+      "integrity": "sha512-NJ2AVj43wP6lnmdb0bfhzeYuFMH7HbBhLfaFJgE+pCOsiuaFr5oj5cx0DWMfipQCX447pfFt17eeOrq8nl371g==",
       "dependencies": [
         "@effect/ai-openai",
         "@effect/ai-openai-compat",
@@ -314,7 +504,7 @@
         "tar",
         "uuid"
       ],
-      "tarball": "http://localhost:4873/@open-insight/eval/-/eval-0.0.25.tgz"
+      "tarball": "http://localhost:4873/@open-insight/eval/-/eval-1.0.4.tgz"
     },
     "@opentelemetry/api-logs@0.221.0": {
       "integrity": "sha512-OlanaW1vv7ufTqQ3/fPLI4arGt5ZoM+P8abOMki6uEYnpRazepSWDwDnnw+la7kE26SHVC18//SMccrDvLKOXQ==",
@@ -840,6 +1030,10 @@
       ],
       "tarball": "http://localhost:4873/estree-walker/-/estree-walker-3.0.3.tgz"
     },
+    "eta@4.6.0": {
+      "integrity": "sha512-lW6is4T1NFOYnmqGZIfvixqj7A7sSvScF+DN8EK6K58xI5MZ5UvYe0GjopxOXQtZvUn4eDdVuZ8XSoYWTMEKwA==",
+      "tarball": "http://localhost:4873/eta/-/eta-4.6.0.tgz"
+    },
     "etag@1.8.1": {
       "integrity": "sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==",
       "tarball": "http://localhost:4873/etag/-/etag-1.8.1.tgz"
@@ -985,6 +1179,13 @@
       ],
       "tarball": "http://localhost:4873/get-proto/-/get-proto-1.0.1.tgz"
     },
+    "glob-to-regex.js@1.2.0_tslib@2.8.1": {
+      "integrity": "sha512-QMwlOQKU/IzqMUOAZWubUOT8Qft+Y0KQWnX9nK3ch0CJg0tTp4TvGZsTfudYKv2NzoQSyPcnA6TYeIQ3jGichQ==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/glob-to-regex.js/-/glob-to-regex.js-1.2.0.tgz"
+    },
     "gopd@1.2.0": {
       "integrity": "sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==",
       "tarball": "http://localhost:4873/gopd/-/gopd-1.2.0.tgz"
@@ -1025,6 +1226,10 @@
     "hyparquet@1.27.1": {
       "integrity": "sha512-kvMGVKlB/xa9UHxWLJkySJYGC436nPeBWC9Fzo/BZtMEzFUjmzD1KuLz67EOpA3Ci6V7yF/yTG7QRSDSx5EDSg==",
       "tarball": "http://localhost:4873/hyparquet/-/hyparquet-1.27.1.tgz"
+    },
+    "hyperdyperid@1.2.0": {
+      "integrity": "sha512-Y93lCzHYgGWdrJ66yIktxiaGULYc6oGiABxhcO5AufBeOyoIdZF7bIfLaOrbM0iGIOXQQgxxRrFEnb+Y6w1n4A==",
+      "tarball": "http://localhost:4873/hyperdyperid/-/hyperdyperid-1.2.0.tgz"
     },
     "iconv-lite@0.7.3": {
       "integrity": "sha512-IKXpvIzjnC9XTAUbVBcMfGS0EPaIXtW6v+zr+RRp+hqULEpo0owZax6wyRwPOJbWbzjYspQwusTsfVr0ifh4uQ==",
@@ -1198,6 +1403,26 @@
     "media-typer@1.1.1": {
       "integrity": "sha512-yz3xRaG20c6/BOzvYoDaGtPmGscs7YivItZEEqe6GbwNfHuxu9YNmvnEkMzKldAGY4/80pRcQRZSEnhquk9XuQ==",
       "tarball": "http://localhost:4873/media-typer/-/media-typer-1.1.1.tgz"
+    },
+    "memfs@4.67.0": {
+      "integrity": "sha512-yuwPWDAs2kfwpQFuFNQI2OkiJ4ZqkGvSFq2jbgC9pFPfgh1N1lPxJaBj5rHp9R1wfJlSzUQkFnSw6WYGPwBbRg==",
+      "dependencies": [
+        "@jsonjoy.com/fs-core",
+        "@jsonjoy.com/fs-fsa",
+        "@jsonjoy.com/fs-node",
+        "@jsonjoy.com/fs-node-builtins",
+        "@jsonjoy.com/fs-node-to-fsa",
+        "@jsonjoy.com/fs-node-utils",
+        "@jsonjoy.com/fs-print",
+        "@jsonjoy.com/fs-snapshot",
+        "@jsonjoy.com/json-pack@1.21.0_tslib@2.8.1",
+        "@jsonjoy.com/util@1.9.0_tslib@2.8.1",
+        "glob-to-regex.js",
+        "thingies",
+        "tree-dump",
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/memfs/-/memfs-4.67.0.tgz"
     },
     "merge-descriptors@2.0.0": {
       "integrity": "sha512-Snk314V5ayFLhp3fkUREub6WtjBfPdCPY1Ln8/8munuLuiYhsABgBVWsozAG+MWMbVEvcdcpbi9R7ww22l9Q3g==",
@@ -1568,6 +1793,13 @@
       ],
       "tarball": "http://localhost:4873/tar/-/tar-7.5.22.tgz"
     },
+    "thingies@2.6.1_tslib@2.8.1": {
+      "integrity": "sha512-cV/CMGTK3M4MlnJ/0At6ismOw/A0EEniDNScajjz/Br3c1sqE72YD01rGpPTKwd27wAxI5Pr+6+0w8yofzFRYw==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/thingies/-/thingies-2.6.1.tgz"
+    },
     "tinybench@2.9.0": {
       "integrity": "sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==",
       "tarball": "http://localhost:4873/tinybench/-/tinybench-2.9.0.tgz"
@@ -1595,6 +1827,13 @@
     "toml@4.3.0": {
       "integrity": "sha512-lVb8X9BsPVuH0M4BKeS91tXAmJvCjQ5UIyAbQFaxkKGyUFK2RPkhwaFSQH8vbpl1d23eu/IBH+dwVMHWaq9A5A==",
       "tarball": "http://localhost:4873/toml/-/toml-4.3.0.tgz"
+    },
+    "tree-dump@1.1.0_tslib@2.8.1": {
+      "integrity": "sha512-rMuvhU4MCDbcbnleZTFezWsaZXRFemSqAM+7jPnzUl1fo9w3YEKOxAeui0fz3OI4EU4hf23iyA7uQRVko+UaBA==",
+      "dependencies": [
+        "tslib"
+      ],
+      "tarball": "http://localhost:4873/tree-dump/-/tree-dump-1.1.0.tgz"
     },
     "tslib@2.8.1": {
       "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==",
@@ -1736,13 +1975,23 @@
       "jsr:@std/fs@^1.0.24",
       "jsr:@std/path@^1.1.6",
       "npm:@effect/platform-node@^4.0.0-beta.101",
-      "npm:@open-insight/agent@^0.0.25",
-      "npm:@open-insight/core@^0.0.25",
-      "npm:@open-insight/eval@^0.0.25",
+      "npm:@open-insight/agent@^1.0.4",
+      "npm:@open-insight/core@^1.0.4",
+      "npm:@open-insight/eval@^1.0.4",
       "npm:effect@^4.0.0-beta.101"
     ],
     "members": {
+      "benchmarks/cvdp_benchmark": {
+        "dependencies": [
+          "jsr:@std/assert@1"
+        ]
+      },
       "benchmarks/verilog-eval": {
+        "dependencies": [
+          "jsr:@std/assert@1"
+        ]
+      },
+      "benchmarks/workbuddy-bench": {
         "dependencies": [
           "jsr:@std/assert@1"
         ]

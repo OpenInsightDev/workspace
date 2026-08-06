@@ -16,3 +16,9 @@
 [submodule "benchmarks/frontier-bench"]
 	path = benchmarks/frontier-bench
 	url = https://github.com/observerw/frontier-bench.git
+[submodule "benchmarks/RTLLM"]
+	path = benchmarks/RTLLM
+	url = https://github.com/OpenInsightDev/RTLLM.git
+[submodule "benchmarks/tau2-bench"]
+	path = benchmarks/tau2-bench
+	url = https://github.com/OpenInsightDev/tau2-bench.git

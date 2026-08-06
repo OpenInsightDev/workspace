@@ -16,5 +16,4 @@ harness id:
     echo "harness {{ id }} initialized"
 
 run:
-    #! /bin/sh
-    deno run -A main.ts
+    deno run --env-file -A main.ts

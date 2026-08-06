@@ -1,34 +1,48 @@
-import { makeBench } from "verilog-eval";
-import { Config, Effect } from "effect";
-import { Harness, Sandbox } from "@open-insight/eval";
-import { makeOpenAi } from "@open-insight/agent";
-import { Eval } from "@open-insight/eval/internal";
+import { makeBench } from "./benchmarks/verilog-eval/mod.ts";
+import { Acp, Sandbox } from "@open-insight/core";
+import { Bench, Eval, Event } from "@open-insight/eval";
+import { Effect } from "effect";
 import { NodeRuntime, NodeServices } from "@effect/platform-node";
 
-const main = Effect.fn(function* () {
-  const bench = yield* makeBench();
+const serveEnv = {
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY!,
+  OPENAI_BASE_URL: process.env.OPENAI_BASE_URL!,
+  OPENAI_MODEL: process.env.OPENAI_MODEL!,
+  DEFAULT_AUTH_REQUEST: JSON.stringify({ methodId: "api-key" }),
+  NO_BROWSER: "1",
+  INITIAL_AGENT_MODE: "agent-full-access",
+  CODEX_CONFIG: JSON.stringify({
+    model: process.env.OPENAI_MODEL,
+    model_provider: "deepseek",
+    model_providers: {
+      deepseek: {
+        name: "DeepSeek",
+        base_url: process.env.OPENAI_BASE_URL,
+        wire_api: "responses",
+        env_key: "OPENAI_API_KEY",
+      },
+    },
+  }),
+};
 
-  const sandbox = yield* Sandbox.Docker.make({});
-  const agent = yield* makeOpenAi({
-    apiKey: Config.string("OPENAI_API_KEY"),
-    baseUrl: Config.string("OPENAI_BASE_URL"),
-    dotenvPath: ".env",
-    model: "deepseek-v4-flash",
-  });
+const main = Effect.gen(function* () {
+  const acp = Acp.layerFrom(
+    { id: "deepseek", agentId: "codex-acp" },
+    { serveEnv },
+  );
+  const transport = Event.Transport.Console.layer;
+  const sandbox = Sandbox.Docker.layerFrom({ ports: [7689] });
 
-  const harness = yield* Harness.make({ id: "deepseek", agent, sandbox });
+  const result = yield* makeBench()
+    .pipe(Bench.sample("10%"))
+    .pipe(Eval.run({ cacheTaskSnapshot: true }))
+    .pipe(Effect.provide(acp))
+    .pipe(Effect.provide(sandbox))
+    .pipe(Effect.provide(transport));
 
-  const result = yield* Eval.run({
-    bench,
-    harness,
-  });
+  return result;
+})
+  .pipe(Effect.scoped)
+  .pipe(Effect.provide(NodeServices.layer));
 
-  console.log(result);
-});
-
-NodeRuntime.runMain(
-  main().pipe(
-    Effect.scoped,
-    Effect.provide(NodeServices.layer),
-  ),
-);
+NodeRuntime.runMain(main);
